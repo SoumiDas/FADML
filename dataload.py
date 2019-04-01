@@ -18,3 +18,5 @@ class DataLoader(object):
             labels = np.frombuffer(lblzip.read(label_filename), dtype=np.uint8, offset=8)
         with ZipFile(image_zip, 'r') as imgzip:
             images = np.frombuffer(imgzip.read(image_filename), dtype=np.uint8, offset=16).reshape(len(labels), 784)
+
+        return images,labels
