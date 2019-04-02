@@ -20,3 +20,7 @@ class DataLoader(object):
             images = np.frombuffer(imgzip.read(image_filename), dtype=np.uint8, offset=16).reshape(len(labels), 784)
 
         return images,labels
+
+
+    def create_batches(self):
+    pass
