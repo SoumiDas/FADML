@@ -1,1 +1,1 @@
-This repository contains some supporting codes for the particular assignment on CNN.
+This repository contains some supporting codes for the assignment on CNN.
